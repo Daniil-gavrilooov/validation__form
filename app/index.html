@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form__build/css/demo.css">
+    <link rel="stylesheet" href="form__build/css/intlTelInput.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <section class="feedback">
+        <form action="#" id="form" class="feedback__form">
+            <input name="first_name" type="text" class="feedback__input" placeholder="name">
+            <input name="surname" type="text" class="feedback__input" placeholder="surname">
+            <input name="email" type="e-mail" class="feedback__input feedback__input-email" placeholder="e-mail">
+            <input name="phone" type="tel" class="feedback__input feedback__input-phone" id="phone">
+
+            <button class="feedback__btn" type="submit">submit</button>
+        </form>
+    </section>
+
+
+    <script src="js/main.min.js"></script>
+    <script src="form__build/js/intlTelInput.js"></script>
+    <script src="form__build/js/data.js"></script>
+    <script src="form__build/js/utils.js"></script>
+    <script>
+        var input = document.querySelector('#phone')
+        window.intlTelInput(input, {})
+    </script>
+
+</body>
+
+</html>
